@@ -48,6 +48,8 @@ async function ex() {
                 })
 
                 console.log(JSON.stringify(cookieJar, undefined, 4))
+
+                await scrappey.destroySession(session.session)
             }
         }
     }
